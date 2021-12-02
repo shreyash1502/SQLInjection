@@ -102,8 +102,8 @@ require "db_connect.php";
                     $h = ($h * $d) % $q;
 
                 for ($i = 0; $i < $M; $i++) {
-                    $p = ($d * $p + ord($pat[$i])) % $q;
-                    $t = ($d * $t + ord($txt[$i])) % $q;
+                    $p = ($d * $p + @ord($pat[$i])) % $q;
+                    $t = ($d * $t + @ord($txt[$i])) % $q;
                 }
                 for ($i = 0; $i <= $N - $M; $i++) {
 
