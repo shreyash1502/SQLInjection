@@ -1,6 +1,6 @@
 <?php
 
-	$connection = mysqli_connect("database-1.cwn5hv7y1ith.us-east-2.rds.amazonaws.com", "admin", "adminpass", "");
+	$connection = mysqli_connect("database-2.cwn5hv7y1ith.us-east-2.rds.amazonaws.com", "admin", "adminpass", "sqli");
 
 	if (!$connection)
 	{
